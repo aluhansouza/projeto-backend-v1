@@ -1,0 +1,1770 @@
+{
+	"info": {
+		"_postman_id": "50dbeb7d-6903-4981-82fe-8b23e1aa0922",
+		"name": "Projeto Backend",
+		"description": "Projeto Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7065134"
+	},
+	"item": [
+		{
+			"name": "MATERIAL",
+			"item": [
+				{
+					"name": "MÉTODOS CRUD",
+					"item": [
+						{
+							"name": "Método Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBzaXN0ZW1hLmNvbSIsImlhdCI6MTc1MjAzMTgzMSwiZXhwIjoxNzUyMDYwNjMxfQ.z6uL73QTY6VV1Sa31V6i6PN8-0J0Tkczv81yyeuUqs0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Origin",
+										"value": "http://google.com.br",
+										"description": "http://localhost:8080",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais"
+									]
+								},
+								"description": "Método Listar"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -42637827,\n    \"nome\": \"exercitation eu cupidatat\",\n    \"_links\": {\n      \"occaecatc\": {\n        \"href\": \"velit Excepteur in\",\n        \"hreflang\": \"exercitation amet\",\n        \"title\": \"dolor enim incididunt\",\n        \"type\": \"veniam tempor dolore sed sit\",\n        \"deprecation\": \"non culpa laboris\",\n        \"profile\": \"officia reprehenderit pariatur\",\n        \"name\": \"quis occaecat dolore ad\",\n        \"templated\": true\n      }\n    }\n  },\n  {\n    \"id\": 39073338,\n    \"nome\": \"velit irure\",\n    \"_links\": {\n      \"ullamco2f9\": {\n        \"href\": \"elit magna enim cup\",\n        \"hreflang\": \"et\",\n        \"title\": \"id officia nisi in\",\n        \"type\": \"sit irure\",\n        \"deprecation\": \"non ad irure labore aliqua\",\n        \"profile\": \"minim enim fugiat\",\n        \"name\": \"nisi pari\",\n        \"templated\": false\n      },\n      \"Uta\": {\n        \"href\": \"nostrud dolor e\",\n        \"hreflang\": \"anim exercitation\",\n        \"title\": \"in\",\n        \"type\": \"aliqua anim\",\n        \"deprecation\": \"aute\",\n        \"profile\": \"nulla quis\",\n        \"name\": \"dolor in\",\n        \"templated\": true\n      },\n      \"esse_529\": {\n        \"href\": \"aliquip nisi laborum adipisicing\",\n        \"hreflang\": \"aute cillum et\",\n        \"title\": \"consectetur qui commodo\",\n        \"type\": \"minim fugiat laboris\",\n        \"deprecation\": \"nostrud\",\n        \"profile\": \"quis et\",\n        \"name\": \"fugiat culpa deserunt esse enim\",\n        \"templated\": false\n      }\n    }\n  }\n]"
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Método Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "material",
+											"value": "{\"nome\":\"teste1\",\"situacao\":\"DISPONÍVEL\",\"patrimonio\":\"4965\",\"categoriaId\":1,\"setorId\":1,\"origemId\":1,\"valorCompra\":100.0,\"tipoDepreciacao\":\"LINEAR\",\"percentualDepreciacao\":10.0,\"vidaUtilAnos\":5,\"valorAtual\":90.0}",
+											"contentType": "application/json",
+											"type": "text"
+										},
+										{
+											"key": "imagem",
+											"type": "file",
+											"src": "/D:/USUARIOS/2025/Downloads/sistema-viral-imagens/sistema-viral.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/4",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"4"
+									]
+								},
+								"description": "Método Atualizar"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}"
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Método Excluir",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"2"
+									]
+								},
+								"description": "Método Excluir"
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Método Buscar por Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/4",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"4"
+									]
+								},
+								"description": "Método Buscar por Id"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}"
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Método Cadastrar",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"disabled": true
+									},
+									{
+										"key": "Origin",
+										"value": "http://google.com.br",
+										"description": "http://localhost:8080",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "material",
+											"value": "{\"nome\":\"Parafuso\",\"situacao\":\"DISPONÍVEL\",\"patrimonio\":\"1875\",\"categoriaId\":1,\"setorId\":1,\"origemId\":1,\"valorCompra\":100.0,\"tipoDepreciacao\":\"LINEAR\",\"percentualDepreciacao\":10.0,\"vidaUtilAnos\":5,\"valorAtual\":90.0}",
+											"contentType": "application/json",
+											"type": "text"
+										},
+										{
+											"key": "imagem",
+											"type": "file",
+											"src": "/D:/USUARIOS/2025/Downloads/sistema-viral-imagens/imagem1.webp"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Testar Conexao Frontend",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/materiais/verificar-conexao",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"verificar-conexao"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CSV, XSLX, PDF",
+					"item": [
+						{
+							"name": "Import File CSV ou XSLX",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/USUARIOS/2025/Downloads/MOCK_DATA (3).xlsx"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/massCreation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"massCreation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Export File CSV ou XSLX",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "text/csv",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/pdf",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/exportarPagina?page=0&size=12&direction=asc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"exportarPagina"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "12"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Exportar PDF",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/pdf"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/materiais/exportar/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"materiais",
+										"exportar",
+										"2"
+									]
+								},
+								"description": "Método Buscar por Id"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": -25282044,\n  \"nome\": \"dolore deserunt cillum nisi\",\n  \"_links\": {\n    \"est7a\": {\n      \"href\": \"mo\",\n      \"hreflang\": \"officia proident laborum\",\n      \"title\": \"minim voluptate\",\n      \"type\": \"ut deserunt\",\n      \"deprecation\": \"nulla dolore ad\",\n      \"profile\": \"ut nisi non id aliq\",\n      \"name\": \"fugiat aliqua cupidatat\",\n      \"templated\": false\n    },\n    \"dolore_ac\": {\n      \"href\": \"magna ea sit officia consectetur\",\n      \"hreflang\": \"irure proident aliquip sint adipisicing\",\n      \"title\": \"nulla quis et\",\n      \"type\": \"exercitation ullamco\",\n      \"deprecation\": \"qui\",\n      \"profile\": \"sed culpa\",\n      \"name\": \"occaecat consequat aute\",\n      \"templated\": false\n    },\n    \"consequat__3\": {\n      \"href\": \"sunt commodo Duis sed\",\n      \"hreflang\": \"aute eu\",\n      \"title\": \"ex\",\n      \"type\": \"quis anim la\",\n      \"deprecation\": \"aute id consequat\",\n      \"profile\": \"fugiat cupidatat\",\n      \"name\": \"ex\",\n      \"templated\": false\n    }\n  }\n}"
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/equipamentos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"equipamentos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-71568130",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EMAIL",
+			"item": [
+				{
+					"name": "Enviar E-mail Simples",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"to\": \"aluhan.yuri.souza@gmail.com\",\r\n    \"subject\": \"E-mail Teste Spring Boot\",\r\n    \"body\": \"Corpo E-mail Teste Spring Boot\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/email/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"email",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enviar E-mail com Anexos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "emailRequest",
+									"value": "{\n    \"to\": \"aluhan.yuri.souza@gmail.com\",\n    \"subject\": \"E-mail Teste com Anexos Spring Boot\",\n    \"body\": \"Corpo E-mail Teste com Anexos Spring Boot\"\n}",
+									"type": "text"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/D:/USUARIOS/2025/Downloads/scyla_small.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/email/withAttachment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"email",
+								"withAttachment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UPLOAD E DOWNLOAD",
+			"item": [
+				{
+					"name": "Multiple Upload",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download File",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/file/upload-path",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"file",
+								"upload-path"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SETOR",
+			"item": [
+				{
+					"name": "Método Listar Setores",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://google.com.br",
+								"description": "http://localhost:8080",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/categorias",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categorias"
+							]
+						},
+						"description": "Método Listar"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": -42637827,\n    \"nome\": \"exercitation eu cupidatat\",\n    \"_links\": {\n      \"occaecatc\": {\n        \"href\": \"velit Excepteur in\",\n        \"hreflang\": \"exercitation amet\",\n        \"title\": \"dolor enim incididunt\",\n        \"type\": \"veniam tempor dolore sed sit\",\n        \"deprecation\": \"non culpa laboris\",\n        \"profile\": \"officia reprehenderit pariatur\",\n        \"name\": \"quis occaecat dolore ad\",\n        \"templated\": true\n      }\n    }\n  },\n  {\n    \"id\": 39073338,\n    \"nome\": \"velit irure\",\n    \"_links\": {\n      \"ullamco2f9\": {\n        \"href\": \"elit magna enim cup\",\n        \"hreflang\": \"et\",\n        \"title\": \"id officia nisi in\",\n        \"type\": \"sit irure\",\n        \"deprecation\": \"non ad irure labore aliqua\",\n        \"profile\": \"minim enim fugiat\",\n        \"name\": \"nisi pari\",\n        \"templated\": false\n      },\n      \"Uta\": {\n        \"href\": \"nostrud dolor e\",\n        \"hreflang\": \"anim exercitation\",\n        \"title\": \"in\",\n        \"type\": \"aliqua anim\",\n        \"deprecation\": \"aute\",\n        \"profile\": \"nulla quis\",\n        \"name\": \"dolor in\",\n        \"templated\": true\n      },\n      \"esse_529\": {\n        \"href\": \"aliquip nisi laborum adipisicing\",\n        \"hreflang\": \"aute cillum et\",\n        \"title\": \"consectetur qui commodo\",\n        \"type\": \"minim fugiat laboris\",\n        \"deprecation\": \"nostrud\",\n        \"profile\": \"quis et\",\n        \"name\": \"fugiat culpa deserunt esse enim\",\n        \"templated\": false\n      }\n    }\n  }\n]"
+						},
+						{
+							"name": "No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/equipamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"equipamentos"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin@sistema.com\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
